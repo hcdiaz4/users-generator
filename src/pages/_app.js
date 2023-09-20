@@ -1,3 +1,4 @@
+import Credits from "@/app/component/credits/credits";
 import Header from "@/app/component/header/header";
 import '@/app/styles/main.scss';
 
@@ -7,6 +8,7 @@ function MyApp({ Component, pageProps }) {
         <>
             <Header />
             <Component {...pageProps} />
+            <Credits />
         </>
     );
 }

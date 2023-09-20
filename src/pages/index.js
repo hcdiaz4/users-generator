@@ -8,17 +8,13 @@ const HomePage = () => {
     const [userData, setDataUser] = useState({});
 
     const getUserOnline = async () => {
-        console.log("User Online");
         const user = await services.getRandomUserOnline();
         const { avatar, email, first_name, last_name, username, password } = user.data;
         setDataUser({ avatar, email, first_name, last_name, username, password });
-        console.log(userData);
     }
 
     useEffect(() => {
         getUserOnline();
-        console.log("Hola effect");
-
     }, []);
 
     return (

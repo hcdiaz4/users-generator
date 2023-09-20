@@ -6,6 +6,7 @@ class MyDocument extends Document {
         return (
             <Html>
                 <Head>
+                    <title>Users | Generator</title>
                     <link rel="shortcut icon" href="/favicon.ico" />
                 </Head>
                 <body>

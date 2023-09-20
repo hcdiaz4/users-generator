@@ -4,10 +4,10 @@ class Services {
 
     getRandomUserOnline = async () => {
         try {
-            const data = await axios.get("https://random-data-api.com/api/users/random_user");
+            const data = await axios.get("https://random-data-api.com/api/v2/users");
             return data;
         } catch (err) {
-            console.log("error: ", err);
+            console.log("[ Services.js (class Services) ]: ", err);
         }
     }
 
